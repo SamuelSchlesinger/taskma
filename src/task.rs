@@ -12,7 +12,6 @@ pub struct Status {
 
 #[derive(Serialize, PartialEq, Eq, PartialOrd, Ord)]
 pub struct Task {
-    project: ProjectId,
     name: String,
     description: String,
     dependencies: BTreeMap<TaskId, Dependency>,
